@@ -11,3 +11,7 @@ span p{
   color:red;
   font-size: 20px;
 }
+
+body{
+  background-image: url("cat.jpg");
+}
