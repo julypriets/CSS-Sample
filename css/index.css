@@ -3,6 +3,8 @@ h1,p{
   text-align:center;
 }
 
-body{
-  background-image: url("cat.jpg");
+.cat{
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
 }
