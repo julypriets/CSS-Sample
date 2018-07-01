@@ -1,10 +1,15 @@
 body{
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
 }
 
 h1{
-  color:green;
+  color:white;
+  font-family: 'Roboto', sans-serif;
   text-align:center;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
 }
 
 .cat{
@@ -24,7 +29,14 @@ h1{
   filter: blur(0);
   filter: brightness(1);
 }
+/*div.polaroid:hover{
+    /*transform: translateX(50px);*/
+    /*transform:rotate(20deg);*/
+    /*transform: scale(1.2,1.2);*/
+    /*transform: skew(-10deg);
+}*/
 div.polaroid{
+  position: relative;
   background-color: white;
   width: 300px;
   padding: 10px;
@@ -32,8 +44,55 @@ div.polaroid{
   margin-bottom: 10px;
   box-shadow: 5px 5px 10px rgba(0,0,0,.5);
   display: block;
+  /*Cuando encuentre una transformación la va a aplicar por 0.3s*/
+  transition: transform .3s;
+  transition-delay: .2s;
+  animation-name: skew;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
 }
 
 .texto{
   text-align: center;
+}
+
+.imgtext{
+  position:absolute;
+  top: 8%;
+  left: 16px;
+  font-size: 18px;
+  color:white;
+}
+
+.cubo{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s, height 2s, transform 4s;
+  transition-timing-function: ease;
+  /*ease-in hace que inicie lento y termine rápido
+  ease-in-out hace que esa todo lento*/
+}
+
+div.cubo:hover{
+  width: 300px;
+  height: 300px;
+  transform: rotate(90deg);
+  animation-name: ejemplo;
+  animation-duration: 4s;
+  /*animation-delay: 1s;*/
+}
+
+@keyframes ejemplo{
+  0%{background-color: red};
+  25%{background-color: orange};
+  50%{background-color: yellow};
+  100%{background-color: blue};
+}
+
+@keyframes skew {
+  0%{transform: skewX(-10deg);};
+  100%{transform: skewY(10deg);};
 }
