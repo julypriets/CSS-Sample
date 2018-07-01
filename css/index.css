@@ -13,6 +13,17 @@ h1{
   border-radius: 10px;
 }
 
+.polaroid img{
+  opacity: .4;
+  filter: blur(2px);
+  filter: brightness(.5);
+}
+
+.polaroid img:hover{
+  opacity: 1;
+  filter: blur(0);
+  filter: brightness(1);
+}
 div.polaroid{
   background-color: white;
   width: 300px;
