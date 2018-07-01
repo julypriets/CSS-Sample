@@ -28,6 +28,11 @@ p{
   opacity: 1;
   filter: blur(0);
   filter: brightness(1);
+  /*cursor:wait;*/
+  /*cursor: text;*/
+  /*cursor:pointer;*/
+  /*cursor:help;*/
+  cursor:copy;
 }
 /*div.polaroid:hover{
     /*transform: translateX(50px);*/
@@ -52,6 +57,8 @@ div.polaroid{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease;
+  /*Si queremos resumir todas esas líneas:
+  animation: skew 4s infinite alternate;*/
 }
 
 .texto{
