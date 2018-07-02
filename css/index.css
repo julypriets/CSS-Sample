@@ -128,3 +128,61 @@ div.cubo:hover{
 
 /*
 Si queremos eliminar algún elemento ponemos: display:none */
+
+.ejercicios{
+  position: relative;
+  /*el 0 nos indica que las siguientes propiedades tendran su valor por default*/
+  background: url("cat.jpg") 0/ cover fixed;
+  width: 100%;
+  height: 500px;
+}
+
+.content{
+  position: absolute;
+  border-radius: 10px;
+  background-color: hsla(120,10%,100%,.6);
+  box-shadow: 10px 10px 10px rgba(0,0,0,.8);
+  top: 15%;
+  bottom: 15%;
+  left: 10%;
+  right: 10%;
+  filter: blur(2px);
+}
+
+.text{
+  top:40%; bottom: 40%; left: 40%; right: 40%;
+  position: absolute;
+}
+
+/*Mas de pseudoclases:
+p:nth-last-of-type(2)
+el ultimo de los hijos de cada grupo
+
+p:only-of-type
+todos los de ese tipo
+
+p:last-child
+el útltimo hijo
+
+p:only-child
+el único hijo
+*/
+
+/*Los dos ":" indican "pseudo-elemento" */
+.parrafo::first-line{
+  color:green;
+  font-size: 2em;
+}
+
+.parrafo::first-letter{
+  font-size: 3em;
+}
+
+.parrafo::before{
+  content:url("cat.jpg");
+}
+
+.parrafo::selection{
+  color:yellow;
+  background-color: black;
+}
