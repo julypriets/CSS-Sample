@@ -35,6 +35,59 @@ p{
   cursor:copy;
 }
 
+/*Navbar*/
+*{
+  margin:0;
+  padding:0;
+}
+header{
+  width:100%;
+  height: auto;
+  padding-bottom: 75px;
+}
+nav{
+  background-color: #efefef;
+  overflow: hidden;
+  position:absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+nav ul{
+  margin-right: 50px;
+}
+
+nav ul li{
+  margin:20px;
+  float: right;
+  display: inline;
+}
+
+li a{
+  font-size: 1.5em;
+  color:black;
+  text-decoration: none;
+}
+.logo_space{
+  float: left;
+  padding: 1em;
+  width: 30%;
+}
+.logo{
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.iconNav{
+  cursor:pointer;
+  font-size: 1.5em;
+  display:block;
+  margin: 20px;
+  float:right;
+}
+.show{
+  display:block;
+  float: none;
+}
 .modal{
   display: none;
   position:fixed;
@@ -142,11 +195,20 @@ div.cubo:hover{
   body{
     background-color: red;
   }
+  nav ul li{
+    display:none;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width:760px) /*phablets o tablets*/ {
   body{
     background-color: green;
+  }
+  nav ul li{
+    display:none;
+  }
+  .logo_space{
+    width: 80%;
   }
 }
 
@@ -157,6 +219,9 @@ div.cubo:hover{
   div.polaroid{
     display:inline-block;
     margin-left: 10%;
+  }
+  .iconNav{
+    display: none;
   }
 }
 
