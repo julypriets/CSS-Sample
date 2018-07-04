@@ -201,9 +201,7 @@ div.cubo:hover{
 }
 
 @media screen and (min-width: 481px) and (max-width:760px) /*phablets o tablets*/ {
-  body{
-    background-color: green;
-  }
+
   nav ul li{
     display:none;
   }
@@ -213,9 +211,7 @@ div.cubo:hover{
 }
 
 @media screen and (min-width: 761px){
-  body{
-    background-color: gray;
-  }
+
   div.polaroid{
     display:inline-block;
     margin-left: 10%;
