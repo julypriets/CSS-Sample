@@ -1,3 +1,3 @@
 # CSS-Sample
 -------------
-##Tests
+Art Gallery
